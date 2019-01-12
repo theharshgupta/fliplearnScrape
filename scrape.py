@@ -1,5 +1,6 @@
 from selenium import webdriver
 import time
+from creds import word
 import random
 import urllib.request
 
@@ -14,7 +15,7 @@ time.sleep(2)
 loginID = driver.find_element_by_xpath('//*[@id="Fname"]')
 loginID.send_keys("harshgupta9913")
 password = driver.find_element_by_xpath('//*[@id="password-lg1"]')
-password.send_keys("harshgupta9913")
+password.send_keys(word)
 driver.find_element_by_xpath('//*[@id="login-bg"]/div/div/div/div/div/div/div/div[1]/div/form/div[3]/div/button').click()
 time.sleep(7)
 # to view all the entries
